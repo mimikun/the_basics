@@ -8,7 +8,7 @@ export default class App extends Component {
         <Text style={styles.red}>Open up App.js to start working on your app!</Text>
         <Text style={styles.bigblue}>Changes you make will automatically reload.</Text>
         <Text style={[styles.bigblue, styles.red]}>Shake your phone to open the developer menu.</Text>
-        <Text style={[styles.red, styles.bigblue]}>I'm Deaf Web Developer.</Text>
+        <Text style={[styles.red, styles.bigblue]}>I'm Yukikaze Driven Developer.</Text>
       </View>
     )
   }
