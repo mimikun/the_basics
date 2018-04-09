@@ -18,5 +18,10 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  justify_content: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'space-between'
   }
 })
