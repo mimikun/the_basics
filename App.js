@@ -17,7 +17,6 @@ export default class App extends Component {
 // Try setting `justifyContent` to `flex-end`.
 // Try setting `flexDirection` to `row`.
 
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
