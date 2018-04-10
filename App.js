@@ -13,15 +13,19 @@ export default class App extends Component {
   }
 }
 
+// Try setting `alignItems` to 'flex-start'
+// Try setting `justifyContent` to `flex-end`.
+// Try setting `flexDirection` to `row`.
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
   },
-  justify_content: {
+  align_items: {
     flex: 1,
     flexDirection: 'column',
-    justifyContent: 'space-between'
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 })
