@@ -5,6 +5,7 @@ export default class App extends Component {
   render () {
     return (
       <View style={styles.justify_content}>
+      <View style={styles.align_items}>
         <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
         <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
         <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
