@@ -30,7 +30,7 @@ export default class App extends Component {
         <View style={styles.alternativeLayoutButtonContainer}>
           <Button
             onPress={this._onPressButton}
-            title='This lools great!'
+            title='This looks great!'
           />
           <Button
             onPress={this._onPressButton}
