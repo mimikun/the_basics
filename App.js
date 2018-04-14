@@ -1,23 +1,42 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, ScrollView, Image, Text, View } from 'react-native'
 
 export default class App extends Component {
   render () {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
+      <ScrollView>
+        <Text style={{fontSize:96}}>Scroll me plz</Text>
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Text style={{ fontSize: 96 }}>If you like</Text>
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Text style={{ fontSize: 96 }}>Scrolling down</Text>
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Text style={{ fontSize: 96 }}>What's the best</Text>
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Text style={{ fontSize: 96 }}>Framework around?</Text>
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Image source={require('https://pbs.twimg.com/profile_images/981520076384878592/Sicg5uvX_400x400.jpg')} />
+        <Text style={{ fontSize: 96 }}>React Native</Text>
+      </ScrollView>
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-})
