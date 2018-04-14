@@ -7,8 +7,30 @@ export default class App extends Component {
       <View style={styles.container}>
         <SectionList
           sections={[
-            {title: 'D', data: ['Devin']},
-            {title: 'J', data: ['Jackson', 'James', 'Jillian', 'Jimmy', 'Joel', 'John', 'Julie']},
+            {title: '嫁艦', data: ['雪風']},
+            {title: '陽炎型駆逐艦',
+              data: [
+                '陽炎',
+                '不知火',
+                '黒潮',
+                '親潮',
+                '早潮',
+                '夏潮',
+                '初風',
+                '雪風',
+                '天津風',
+                '時津風',
+                '浦風',
+                '磯風',
+                '浜風',
+                '谷風',
+                '野分',
+                '嵐',
+                '萩風',
+                '舞風',
+                '秋雲',
+              ]
+            },
           ]}
           renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
           renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}
