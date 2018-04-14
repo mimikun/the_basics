@@ -35,8 +35,7 @@ export default class App extends Component {
         </TouchableOpacity>
         <TouchableNativeFeedback
           onPress={this._onPressButton}
-          background={Platform.OS === 'android' ?
-            TouchableNativeFeedback.SelectableBackground() : ''}>
+          background={Platform.OS === 'android' ? TouchableNativeFeedback.SelectableBackground() : ''}>
           <View style={styles.button}>
             <Text style={styles.buttonText}>
               TouchabelNativeFeedback
