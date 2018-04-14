@@ -1,13 +1,59 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import {
+  Alert,
+  StyleSheet,
+  Text,
+  View,
+  TouchableHighlight,
+  TouchableOpacity,
+  TouchableNativeFeedback,
+  TouchableWithoutFeedback,
+  Platform
+} from 'react-native'
 
 export default class App extends Component {
+  _onPressButton () {
+    Alert.alert('You tapped the button!')
+  }
+
+  _onLongPressButton () {
+    Alert.alert('You long-pressed the button!')
+  }
+
   render () {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <TouchableHighlight onPress={this._onPressButton} underlayColor='white'>
+          <View style={styles.button}>
+            <Text style={styles.buttonText}>TouchableHighlight</Text>
+          </View>
+        </TouchableHighlight>
+        <TouchableOpacity onPress={this._onPressButton}>
+          <View style={styles.button}>
+            <Text style={styles.buttonText}>TouchableOpacity</Text>
+          </View>
+        </TouchableOpacity>
+        <TouchabelNativeFeedback
+          onPress={this._onPressButton}
+          background={Platform.OS === 'android' ?
+            TouchableNativeFeedback.SelectableBackground() : ''}>
+          <View style={styles.button}>
+            <Text style={styles.buttonText}>
+              TouchabelNativeFeedback
+            </Text>
+          </View>
+        </TouchabelNativeFeedback>
+        <TouchableWithoutFeedback
+          onPress={this._onPressButton}>
+          <View style={styles.button}>
+            <Text style={styles.buttonText}>TouchableWithoutFeedback</Text>
+          </View>
+        </TouchableWithoutFeedback>
+        <TouchableHighlight onPress={this._onPressButton} onLongPress={this._onLongPressButton} underlayColor="white">
+          <View style={styles.button}>
+            <Text style={styles.buttonText}>Touchable with Long Press</Text>
+          </View>
+        </TouchableHighlight>
       </View>
     )
   }
@@ -15,9 +61,17 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
+    paddingTop: 60,
+    alignItems: 'center'
+  },
+  button: {
+    marginBottom: 30,
+    width: 260,
     alignItems: 'center',
-    justifyContent: 'center'
+    backgroundColor: '#2196F3'
+  },
+  buttonText: {
+    padding: 20,
+    color: 'white'
   }
 })
