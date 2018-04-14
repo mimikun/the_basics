@@ -33,7 +33,7 @@ export default class App extends Component {
             <Text style={styles.buttonText}>TouchableOpacity</Text>
           </View>
         </TouchableOpacity>
-        <TouchabelNativeFeedback
+        <TouchableNativeFeedback
           onPress={this._onPressButton}
           background={Platform.OS === 'android' ?
             TouchableNativeFeedback.SelectableBackground() : ''}>
@@ -42,7 +42,7 @@ export default class App extends Component {
               TouchabelNativeFeedback
             </Text>
           </View>
-        </TouchabelNativeFeedback>
+        </TouchableNativeFeedback>
         <TouchableWithoutFeedback
           onPress={this._onPressButton}>
           <View style={styles.button}>
